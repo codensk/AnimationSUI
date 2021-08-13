@@ -37,7 +37,7 @@ struct SunView: View {
                         withAnimation (
                             .easeInOut(duration: 4)
                                 .repeatForever()) {
-                            opacity = 0.7
+                            opacity = 1.0
                         }
                     }
             }

@@ -21,7 +21,7 @@ struct ContentView: View {
                     startYPos: geometry.size.height / 4,
                     scaleStart: 1,
                     scaleEnd: 0.5,
-                    duration: 18
+                    duration: 15
                 )
                 
                 BeeView(
@@ -30,7 +30,7 @@ struct ContentView: View {
                     startYPos: geometry.size.height / 2,
                     scaleStart: 0.5,
                     scaleEnd: 0.2,
-                    duration: 20,
+                    duration: 14,
                     reverse: true
                 )
                 
@@ -40,7 +40,7 @@ struct ContentView: View {
                     startYPos: geometry.size.height / 3,
                     scaleStart: 0.5,
                     scaleEnd: 0.2,
-                    duration: 25
+                    duration: 20
                 )
                 
                 VStack {
