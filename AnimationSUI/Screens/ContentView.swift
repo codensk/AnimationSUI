@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var startAnimation: Bool = false
-    
+   
     var body: some View {
         ZStack {
             GeometryReader { geometry in
@@ -23,6 +23,7 @@ struct ContentView: View {
                     scaleEnd: 0.5,
                     duration: 15
                 )
+                .zIndex(1)
                 
                 BeeView(
                     width: 100,
@@ -43,6 +44,19 @@ struct ContentView: View {
                     duration: 20
                 )
                 
+                FinishTextView()
+                    .offset(
+                        x: 0.0,
+                        y: geometry.size.height / 4
+                    )
+                
+                CowView()
+                    .offset(
+                        x: geometry.size.width / 2 - 50,
+                        y: geometry.size.height - 100
+                    )
+                    .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true))
+               
                 VStack {
                     Spacer()
                     

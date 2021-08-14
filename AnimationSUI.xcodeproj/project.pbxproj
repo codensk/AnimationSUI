@@ -16,6 +16,9 @@
 		A2A8901C26C61F820044B12F /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8901B26C61F820044B12F /* SunView.swift */; };
 		A2A8901E26C6226D0044B12F /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8901D26C6226D0044B12F /* FlowerView.swift */; };
 		A2A8902326C62F600044B12F /* BeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8902226C62F600044B12F /* BeeView.swift */; };
+		A2A8902B26C755C40044B12F /* CowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8902A26C755C40044B12F /* CowView.swift */; };
+		A2A8902D26C75EFE0044B12F /* FinishTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8902C26C75EFE0044B12F /* FinishTextView.swift */; };
+		A2A8903026C766160044B12F /* GradientTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8902F26C766160044B12F /* GradientTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		A2A8901B26C61F820044B12F /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
 		A2A8901D26C6226D0044B12F /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
 		A2A8902226C62F600044B12F /* BeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeView.swift; sourceTree = "<group>"; };
+		A2A8902A26C755C40044B12F /* CowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowView.swift; sourceTree = "<group>"; };
+		A2A8902C26C75EFE0044B12F /* FinishTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTextView.swift; sourceTree = "<group>"; };
+		A2A8902F26C766160044B12F /* GradientTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,9 @@
 		A2A8900326C613010044B12F /* AnimationSUI */ = {
 			isa = PBXGroup;
 			children = (
-				A2A8901626C616470044B12F /* Views */,
 				A2A8901426C613C90044B12F /* Application */,
+				A2A8901626C616470044B12F /* Views */,
+				A2A8902E26C766000044B12F /* ViewModifiers */,
 				A2A8901526C613E10044B12F /* Screens */,
 				A2A8901326C613C10044B12F /* Resources */,
 				A2A8900A26C613020044B12F /* Preview Content */,
@@ -112,8 +119,18 @@
 				A2A8901B26C61F820044B12F /* SunView.swift */,
 				A2A8901D26C6226D0044B12F /* FlowerView.swift */,
 				A2A8902226C62F600044B12F /* BeeView.swift */,
+				A2A8902A26C755C40044B12F /* CowView.swift */,
+				A2A8902C26C75EFE0044B12F /* FinishTextView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A2A8902E26C766000044B12F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8902F26C766160044B12F /* GradientTitle.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +206,12 @@
 				A2A8900726C613010044B12F /* ContentView.swift in Sources */,
 				A2A8901E26C6226D0044B12F /* FlowerView.swift in Sources */,
 				A2A8902326C62F600044B12F /* BeeView.swift in Sources */,
+				A2A8902B26C755C40044B12F /* CowView.swift in Sources */,
 				A2A8901A26C61CEA0044B12F /* SkyBackgroundView.swift in Sources */,
 				A2A8900526C613010044B12F /* AnimationSUIApp.swift in Sources */,
 				A2A8901826C6164F0044B12F /* GrassView.swift in Sources */,
+				A2A8903026C766160044B12F /* GradientTitle.swift in Sources */,
+				A2A8902D26C75EFE0044B12F /* FinishTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

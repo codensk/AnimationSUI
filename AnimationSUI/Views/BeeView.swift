@@ -21,7 +21,7 @@ struct BeeView: View {
     
     @State private var startAnimate: Bool = false
     @State private var position: CGFloat = 0
-
+    
     var body: some View {
         GeometryReader { geometry in
             Image("bee")
@@ -48,5 +48,15 @@ struct BeeView: View {
 struct BeeView_Previews: PreviewProvider {
     static var previews: some View {
         BeeView()
+    }
+}
+
+extension AnyTransition {
+    static var customTransition: AnyTransition {
+        let insertion = AnyTransition.move(edge: .top)
+            .combined(with: .scale(scale: 0.2, anchor: .topTrailing))
+            .combined(with: .opacity)
+        let removal = AnyTransition.move(edge: .top)
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
